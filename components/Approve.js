@@ -152,13 +152,13 @@ export function ApproveToken(weiAmount) {
     switch (connectedNetwork) {
       case "0x2af8": //kcb
         setTokenaddress(0xd8be685e1868b4bac6fe9d4db8b6fdaa66cdc7f9);
-        setBridgecontract(0x9a9bc340103c462365db54e423f95784c664d3df);
+        setBridgecontract(0x8D7BC9cE6249C32c67fb9b81A83840FF72919084);
         setresultoshow(result2.data);
 
         break;
       case "0x38": //bsc
         setTokenaddress(0x55d398326f99059ff775485246999027b3197955);
-        setBridgecontract(0xc5052054dbdc35f84d279cb321be98480d807f6f);
+        setBridgecontract(0xb1e4E35D059fB6c5A34493981E24EDf3d5044647);
         setresultoshow(result.data);
         break;
 
