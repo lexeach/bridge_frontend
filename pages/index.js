@@ -893,6 +893,26 @@ export default function Home({ sendDataToParent }) {
 
   console.log("main", connectedNetwork);
 
+  useEffect(() => {
+    // Check the value of connectedNetwork and set networkName accordingly
+    switch (connectedNetwork) {
+      case "0x2af8": //kcb
+        settopName("KBC");
+        setdownName("BSC");
+        break;
+      case "0x38": //bsc
+        settopName("BSC");
+        setdownName("KBC");
+
+        break;
+
+      // Add cases for other chains
+      // ...
+      default:
+      // Handle other cases if needed
+    }
+  }, [connectedNetwork]); // Run this effect whenever connectedNetwork changes
+
   /*const [contractaddress, setcontractaddress] = useState(
     "0x617c5814f9c52e3768FD233088A01cc6dE25c58A"
   );
