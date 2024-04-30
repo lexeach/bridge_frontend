@@ -994,7 +994,7 @@ export default function Home({ sendDataToParent }) {
 
       await writeContract({
         abi,
-        address: "0x551B5449bCb9452720871879f5fD0F8A39af3229", // "0x9A9bc340103C462365Db54E423f95784C664d3Df", // "0xBD933Db03dA178059079590B50b8e2bbE09313b0", // KCB BRIDGE CONTRACT
+        address: "0x8Ec7e61406592a9A87ea734a51213F8b60E2DFC6", // "0x9A9bc340103C462365Db54E423f95784C664d3Df", // "0xBD933Db03dA178059079590B50b8e2bbE09313b0", // KCB BRIDGE CONTRACT
         functionName: "lockTokens",
         args: [BigInt(weiAmount)], //[ BigInt(value * 18)],
         value: 0, //BigInt(valueInWei), // Set the value property to send ETH
